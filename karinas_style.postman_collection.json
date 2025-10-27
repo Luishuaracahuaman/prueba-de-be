@@ -1,0 +1,197 @@
+{
+	"info": {
+		"_postman_id": "6b778984-e36d-49a0-aeaa-9439dda33b81",
+		"name": "karinas_style",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43465654",
+		"_collection_link": "https://cloudy-sunset-9516396.postman.co/workspace/karinas_style~09b10af5-2295-40d9-9f8d-5cf69eddf90a/collection/43465654-6b778984-e36d-49a0-aeaa-9439dda33b81?action=share&source=collection_link&creator=43465654"
+	},
+	"item": [
+		{
+			"name": "FOLDER",
+			"item": [
+				{
+					"name": "CREATE | CREAR",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Polo Amarillo\",\r\n  \"size\": \"S\",\r\n  \"color\": \"Amarillo\",\r\n  \"unitPrice\": 29.9,\r\n  \"stock\": 30\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://shiny-space-cod-q7954xpr7vj5cx66r-8085.app.github.dev/v1/api/garment/save",
+							"protocol": "https",
+							"host": [
+								"shiny-space-cod-q7954xpr7vj5cx66r-8085",
+								"app",
+								"github",
+								"dev"
+							],
+							"path": [
+								"v1",
+								"api",
+								"garment",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "READ | LISTAR",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://shiny-space-cod-q7954xpr7vj5cx66r-8085.app.github.dev/v1/api/garment",
+							"protocol": "https",
+							"host": [
+								"shiny-space-cod-q7954xpr7vj5cx66r-8085",
+								"app",
+								"github",
+								"dev"
+							],
+							"path": [
+								"v1",
+								"api",
+								"garment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "READ | LISTAR X ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://shiny-space-cod-q7954xpr7vj5cx66r-8085.app.github.dev/v1/api/garment/2",
+							"protocol": "https",
+							"host": [
+								"shiny-space-cod-q7954xpr7vj5cx66r-8085",
+								"app",
+								"github",
+								"dev"
+							],
+							"path": [
+								"v1",
+								"api",
+								"garment",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE | EDITAR",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"identifier\": 2,\r\n  \"name\": \"Polo Rojo\",\r\n  \"size\": \"M\",\r\n  \"color\": \"Rojo\",\r\n  \"unitPrice\": 29.9,\r\n  \"stock\": 30\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://shiny-space-cod-q7954xpr7vj5cx66r-8085.app.github.dev/v1/api/garment/update",
+							"protocol": "https",
+							"host": [
+								"shiny-space-cod-q7954xpr7vj5cx66r-8085",
+								"app",
+								"github",
+								"dev"
+							],
+							"path": [
+								"v1",
+								"api",
+								"garment",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE | ELIMINAR",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://shiny-space-cod-q7954xpr7vj5cx66r-8085.app.github.dev/v1/api/garment/delete/3",
+							"protocol": "https",
+							"host": [
+								"shiny-space-cod-q7954xpr7vj5cx66r-8085",
+								"app",
+								"github",
+								"dev"
+							],
+							"path": [
+								"v1",
+								"api",
+								"garment",
+								"delete",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PATCH | RESTAURAR",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"identifier\": 2,\r\n  \"name\": \"Polo Amarillo\",\r\n  \"size\": \"M\",\r\n  \"color\": \"Amarillo\",\r\n  \"unitPrice\": 29.9,\r\n  \"stock\": 30\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://shiny-space-cod-q7954xpr7vj5cx66r-8085.app.github.dev/v1/api/garment/restore/3",
+							"protocol": "https",
+							"host": [
+								"shiny-space-cod-q7954xpr7vj5cx66r-8085",
+								"app",
+								"github",
+								"dev"
+							],
+							"path": [
+								"v1",
+								"api",
+								"garment",
+								"restore",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
